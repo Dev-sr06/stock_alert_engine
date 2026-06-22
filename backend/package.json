@@ -10,7 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "@massive.com/client-js": "^10.7.0",
+    "dotenv": "^17.4.2",
     "express": "^5.2.1",
-    "@massive.com/client-js": "^10.7.0"
+    "ws": "^8.21.0"
   }
 }
