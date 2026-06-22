@@ -6,7 +6,7 @@ const app=express();
 app.listen(3000,()=>{
     console.log("server is listening at port no 3000");
 })
-const rest = massive.restClient("y4FYfJGJX8ZrBwr_zwZeIW5e6oRUr20X");
+const rest = massive.rest2Client(process.env.API_KEY);
 
 
 app.get("/", async (req, res) => {
@@ -29,6 +29,4 @@ app.get("/", async (req, res) => {
   }
 });
 
-
-console.log(rest.getStocksAggregates?.toString());
 
